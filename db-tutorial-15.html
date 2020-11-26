@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function factorial(num) {
+        if (num <= 1) {
+          return 1;
+        } else {
+          return num * factorial(num - 1);
+        }
+      }
+      //1st: num = 4 * factorial(3) = 4 * 6 = 24
+      //2nd: num = 3 * factorial(2) = 3 * 2 = 6
+      //3rd: num = 2 * factorial(1) = 2 * 1 = 2
+      // 3rd answer gets put into 2nd equation and gives 2nd answer
+      // 2nd answer gets put into 1st equation and gives 1st answer
+      document.write("Factorial of 4 = ", factorial(4), "<br />");
+    </script>
+  </body>
+</html>
